@@ -1,8 +1,7 @@
 import { useState } from "react";
-import React from "react";
-
-import "./navbar.css";
 import CompanyIcon from "../../images/Icon1.png";
+import "./navbar.css";
+
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -16,82 +15,66 @@ const Navigation = () => {
   ];
 
   return (
-    <nav className="bg-white shadow-sm mx-auto navbar_main">
-      {/* <div className="mx-auto px-4 sm:px-6 lg:px-8"> */}
-
+    <nav className="navbar_main">
+      {/* Desktop Navigation */}
       <div className="desktop_viewNav">
-        {/* Left side - Brand */}
-        <div className="flex items-center">
-          <span>
-            <img src={CompanyIcon} id="website_Logo" alt="Wbsite logo" />
-          </span>
-          <span className="text-2xl font-bold text-gray-800">Nexcent</span>
+        {/* Brand Section */}
+        <div className="brand-section">
+          <img src={CompanyIcon} id="website_Logo" alt="Website logo" />
+          <span className="brand-name">Nexcent</span>
         </div>
 
-        {/* Middle - Navigation items (desktop) */}
-        <div className="hidden md:flex items-center destop_navlinks">
+        {/* Desktop Nav Links */}
+        <div className="destop_navlinks">
           {navItems.map((item) => (
-            <a key={item} href="/contact" className="Header_nav_link">
+            <a key={item} href="#" className="Header_nav_link">
               {item}
             </a>
           ))}
         </div>
 
-        {/* Right side - Auth buttons */}
-        <div className="hidden md:flex items-center">
-          <a href="/login" className="login_btn">
+        {/* Desktop Auth Buttons */}
+        <div className="auth-buttons">
+          <a href="#login" className="login_btn">
             Login
           </a>
-          <a href="/signUp" className="sigUp_btn">
+          <a href="#signup" className="sigUp_btn">
             Sign up
           </a>
         </div>
 
-        {/* Mobile menu button */}
-        <div className="md:hidden flex">
-          <button
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="text-gray-600 hover:text-gray-800"
+        {/* Mobile Menu Button (Hidden on Desktop) */}
+        <button
+          className="mobile-menu-button"
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+        >
+          <svg
+            className="hamburger-icon"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
           >
-            <svg
-              className="h-6 w-6"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              {isMenuOpen ? (
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M6 18L18 6M6 6l12 12"
-                />
-              ) : (
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M4 6h16M4 12h16M4 18h16"
-                />
-              )}
-            </svg>
-          </button>
-        </div>
+            {isMenuOpen ? (
+              <path d="M6 18L18 6M6 6l12 12" />
+            ) : (
+              <path d="M4 6h16M4 12h16M4 18h16" />
+            )}
+          </svg>
+        </button>
       </div>
 
-      {/* Mobile menu */}
+      {/* Mobile Navigation */}
       {isMenuOpen && (
-        <div className="mobile_View_nav md:hidden items-center">
+        <div className="mobile_View_nav">
           {navItems.map((item) => (
-            <a key={item} href="/contact" className="mobileView_link block gap-6 ">
+            <a key={item} href="#" className="mobileView_link">
               {item}
             </a>
           ))}
           <div className="MobileView_AuthBtn">
-            <a href="/login" className="mobileView_login">
+            <a href="#login" className="mobileView_login">
               Login
             </a>
-            <a href="/SignUp" className="mobileView_SignUp">
+            <a href="#signup" className="mobileView_SignUp">
               Sign up
             </a>
           </div>

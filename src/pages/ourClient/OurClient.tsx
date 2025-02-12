@@ -72,7 +72,7 @@ const OurClient = () => {
         <div className="community_card">
           {CommunityCard_Data.map((card, index) => (
             <div key={index} className="card">
-              <img src={card.icon} alt={card.heading} />
+              <img src={card.icon} alt={card.heading} className="mx-auto" />
               <h2>{card.heading}</h2>
               <p>{card.description}</p>
             </div>

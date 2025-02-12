@@ -30,6 +30,10 @@
   margin-top: 14px;
   padding: 25px 0px;
 }
+.client_icon {
+  width: calc(100% / 7);
+  max-width: 40px;
+}
 /* Community Card style */
 .community_div {
   margin-top: 40px;
@@ -64,7 +68,7 @@
   width: 299px;
   /* height: 280px; */
   padding: 24px 16px;
-
+  border-radius: 8px;
   display: flex;
   flex-direction: column;
   align-items: center; /* Horizontal centering */
@@ -269,5 +273,427 @@
     border-radius: 4px;
     padding: 13px 30px;
     margin-top: 32px;
+  }
+}
+@media (max-width: 960px) {
+  .main_div {
+    background-color: white;
+    padding-top: 40px;
+  }
+  .client_div {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  .client_heading {
+    align-items: center;
+  }
+  .client_heading h2 {
+    font-size: 36px;
+    line-height: 44px;
+    font-weight: 600;
+    color: #4d4d4d;
+  }
+  .client_heading p {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    text-align: center;
+    color: #717171;
+  }
+  .client_Icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 14px;
+    padding: 25px 0px;
+  }
+  /* Community Card style */
+  .community_div {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .community_header {
+  }
+  .community_header h2 {
+    font-size: 34px;
+    line-height: 44px;
+    font-weight: 600;
+    color: #4d4d4d;
+    /* width: 542px; */
+  }
+  .community_header p {
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 400;
+    text-align: center;
+    color: #717171;
+  }
+  .community_card {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    margin: 16px 40px;
+  }
+  .community_card .card {
+    /* display: flex; */
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+    width: 299px;
+    /* height: 280px; */
+    padding: 18px 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Horizontal centering */
+    text-align: center; /* For text elements */
+  }
+  .card h2 {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 36px;
+
+    text-align: center;
+    color: #4d4d4d;
+  }
+  .card img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 16px;
+    /* max-width: 100%; */
+    height: auto;
+  }
+  .card p {
+    text-align: center;
+    line-height: 20px;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 8px 6px;
+    color: #717171;
+  }
+  /* pixel Grade year style */
+  .pixelgrade_year {
+    display: flex;
+    margin: 18px 40px;
+    align-items: center;
+  }
+  .pixelGrade_img_div {
+  }
+  .pixelGrade_img_div img {
+    width: 420px;
+  }
+  .pixelGrade_content {
+    width: 601px;
+    margin-left: 10px;
+  }
+  .pixelGrade_content h1 {
+    font-size: 34px;
+    line-height: 44px;
+    font-weight: 600;
+    color: #4d4d4d;
+    margin-right: auto;
+    margin-bottom: 15px;
+  }
+  .pixelGrade_content p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #717171;
+  }
+  .pixelGrade_content button {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    background-color: #4caf4f;
+    color: white;
+    border-radius: 4px;
+    padding: 13px 30px;
+    margin-top: 32px;
+  }
+}
+@media (max-width: 768px) {
+  .main_div {
+    background-color: white;
+    padding-top: 30px;
+  }
+  .client_div {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .client_heading {
+    align-items: center;
+  }
+  .client_heading h2 {
+    font-size: 34px;
+    line-height: 44px;
+    font-weight: 600;
+    color: #4d4d4d;
+  }
+  .client_heading p {
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 400;
+    text-align: center;
+    color: #717171;
+  }
+  .client_Icons {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    padding: 20px 0px;
+    gap: 10px;
+  }
+  .client_icon {
+    width: calc(100% / 4);
+    max-width: 30px;
+  }
+  /* Community Card style */
+  .community_div {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .community_header {
+  }
+  .community_header h2 {
+    font-size: 32px;
+    line-height: 44px;
+    font-weight: 600;
+    color: #4d4d4d;
+    /* width: 542px; */
+  }
+  .community_header p {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    text-align: center;
+    color: #717171;
+  }
+  .community_card {
+    display: grid;
+    justify-content: center;
+    gap: 10px;
+    margin: 16px 20px;
+    gap: 20px;
+  }
+  .community_card .card {
+    /* display: flex; */
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: 400px;
+    /* height: 280px; */
+    padding: 18px 14px;
+    display: flex;
+
+    flex-direction: column;
+    align-items: center; /* Horizontal centering */
+    text-align: center; /* For text elements */
+  }
+  .card h2 {
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 36px;
+
+    text-align: center;
+    color: #4d4d4d;
+  }
+  .card img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 16px;
+    /* max-width: 100%; */
+    height: auto;
+  }
+  .card p {
+    text-align: center;
+    line-height: 20px;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 8px 6px;
+    color: #717171;
+  }
+  /* pixel Grade year style */
+  .pixelgrade_year {
+    display: grid;
+    margin: 18px 20px;
+    align-items: center;
+    justify-content: center;
+  }
+  .pixelGrade_img_div {
+  }
+  .pixelGrade_img_div img {
+    width: 350px;
+    position: relative;
+    left: 15%;
+    align-items: center;
+    justify-content: center;
+  }
+  .pixelGrade_content {
+    width: auto;
+    margin-left: 10px;
+  }
+  .pixelGrade_content h1 {
+    font-size: 32px;
+    line-height: 44px;
+    font-weight: 600;
+    color: #4d4d4d;
+    margin-right: auto;
+    margin-bottom: 15px;
+  }
+  .pixelGrade_content p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #717171;
+  }
+  .pixelGrade_content button {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    width: 100%;
+    background-color: #4caf4f;
+    color: white;
+    border-radius: 4px;
+    padding: 13px 30px;
+    margin-top: 32px;
+  }
+}
+@media (max-width: 425px) {
+  .client_div {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+
+  .client_heading {
+    align-items: center;
+  }
+  .client_heading h2 {
+    font-size: 30px;
+    line-height: 44px;
+    font-weight: 600;
+    color: #4d4d4d;
+  }
+  .client_heading p {
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 400;
+    text-align: center;
+    color: #717171;
+  }
+  .client_Icons {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    padding: 20px 0px;
+    gap: 10px;
+  }
+  .client_icon {
+    width: calc(100% / 2);
+    max-width: 30px;
+  }
+  /* Community Card style */
+  .community_div {
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+
+  .community_header h2 {
+    font-size: 30px;
+  }
+  .community_header p {
+    font-size: 14px;
+  }
+  .community_card {
+    display: grid;
+    justify-content: center;
+    gap: 10px;
+    margin: 16px;
+    gap: 20px;
+  }
+  .community_card .card {
+    /* display: flex; */
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: auto;
+    /* height: 280px; */
+    padding: 18px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Horizontal centering */
+    text-align: center;
+  }
+  .card h2 {
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 36px;
+
+    text-align: center;
+    color: #4d4d4d;
+  }
+  .card img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 16px;
+    /* max-width: 100%; */
+    height: auto;
+  }
+  .card p {
+    text-align: center;
+    line-height: 20px;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 8px 6px;
+    color: #717171;
+  }
+  /* pixel Grade year style */
+  .pixelgrade_year {
+    display: grid;
+    margin: 18px 20px;
+    align-items: center;
+    justify-content: center;
+  }
+  .pixelGrade_img_div {
+  }
+  .pixelGrade_img_div img {
+    width: 320px;
+    position: relative;
+    left: 6%;
+    align-items: center;
+    justify-content: center;
+  }
+  .pixelGrade_content {
+    width: auto;
+    margin-left: 10px;
+  }
+  .pixelGrade_content h1 {
+    font-size: 30px;
+    line-height: 120%;
+    font-weight: 600;
+    color: #4d4d4d;
+
+    margin-bottom: 10px;
+  }
+  .pixelGrade_content p {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #717171;
+  }
+  .pixelGrade_content button {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    width: 100%;
+    background-color: #4caf4f;
+    color: white;
+    border-radius: 4px;
+    padding: auto;
+    margin-top: 20px;
   }
 }

@@ -1,158 +1,147 @@
+/* Base Styles */
 .navbar_main {
   background-color: #f5f7fa;
+  position: relative;
 }
+
 .desktop_viewNav {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: center;
   padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
-.destop_navlinks {
-  /* display: flex;
-  justify-content: space-evenly; */
+
+.brand-section {
+  display: flex;
+  align-items: center;
+  gap: 3px;
 }
+
 #website_Logo {
   width: 32px;
+  /* height: 32px; */
 }
-.Header_nav_link {
-  gap: 10px;
-  margin: 10px;
-  font-size: 16px;
-  font-weight: 400;
+
+.brand-name {
+  font-size: 24px;
+  font-weight: 700;
   color: #18191f;
-  line-height: 24px;
 }
+
+/* Desktop Navigation */
+.destop_navlinks {
+  display: flex;
+  gap: 20px;
+}
+
+.Header_nav_link {
+  color: #18191f;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.Header_nav_link:hover {
+  color: #4caf4f;
+}
+
+.auth-buttons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
 .login_btn {
   color: #4caf4f;
-  line-height: 24px;
-  font-size: 14px;
-  margin-right: 14px;
+  font-weight: 500;
 }
+
 .sigUp_btn {
-  border-radius: 6px;
-  padding: 10px 20px;
   background-color: #4caf4f;
   color: white;
-  gap: 10px;
-  line-height: 24px;
-  font-size: 14px;
+  padding: 10px 20px;
+  border-radius: 6px;
 }
-@media (max-width: 1024px) {
-  .navbar_main {
-    background-color: #f5f7fa;
-    max-width: 1024px;
-  }
-  .desktop_viewNav {
-    display: flex;
-    justify-content: space-around;
-    padding: 20px;
-  }
-  .destop_navlinks {
-    /* display: flex;
-        justify-content: space-evenly; */
-  }
-  .Header_nav_link {
-    gap: 5px;
-    margin: 8px;
-    font-size: 16px;
-    font-weight: 400;
-    color: #18191f;
-    line-height: 24px;
-  }
-  .login_btn {
-    color: #4caf4f;
-    line-height: 24px;
-    font-size: 14px;
-  }
-  .sigUp_btn {
-    border-radius: 6px;
-    padding: 8px 15px;
-    background-color: #4caf4f;
-    color: white;
-    gap: 10px;
-    line-height: 24px;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
-    font-size: 14px;
-    margin-left: 0px;
-  }
+
+.sigUp_btn:hover {
+  background-color: #3d8b40;
 }
+
+/* Mobile Menu Button (Hidden on Desktop) */
+.mobile-menu-button {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+}
+
+.hamburger-icon {
+  width: 24px;
+  height: 24px;
+  stroke-width: 2;
+}
+
+/* Mobile Navigation */
+.mobile_View_nav {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: #f5f7fa;
+  padding: 20px;
+  z-index: 1000;
+}
+
+.mobileView_link {
+  display: block;
+  padding: 12px 0;
+  color: #18191f;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.MobileView_AuthBtn {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Responsive Styles */
 @media (max-width: 768px) {
-  .navbar_main {
-    background-color: #f5f7fa;
-  }
-  .desktop_viewNav {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px 30px;
-    width: 100%;
-  }
-  .destop_navlinks {
-    /* display: flex;
-    justify-content: space-evenly; */
-  }
-  .mobile_View_nav {
-    position: relative;
-    left: 8%;
-    width: 85%;
-  }
-  /* #website_Logo {
-    width: 35px !important;
-  } */
-  .mobileView_link {
-    padding-top: 5px;
+  .destop_navlinks,
+  .auth-buttons {
+    display: none;
   }
 
-  .MobileView_AuthBtn {
-    display: grid;
-    gap: 10px;
+  .mobile-menu-button {
+    display: block;
+  }
+
+  .mobile_View_nav {
+    display: block;
+  }
+
+  .desktop_viewNav {
+    padding: 15px 20px;
   }
   .mobileView_login {
-    color: #4caf4f;
+    color: #3d8b40;
     text-align: center;
   }
   .mobileView_SignUp {
-    color: white;
     background-color: #4caf4f;
-    border-radius: 6px;
-
-    padding: 8px;
     text-align: center;
+    color: white;
+    border-radius: 6px;
+    padding: 7px 10px;
   }
 }
-@media (max-width: 425px) {
-  .navbar_main {
-    background-color: #f5f7fa;
-  }
-  .desktop_viewNav {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    width: 100%;
-    /* background-color: rgb(154, 206, 206); */
-  }
-  .mobile_View_nav {
-    position: relative;
-    left: 12%;
-    width: 80%;
-  }
-  .mobileView_link {
-    padding-top: 5px;
-  }
 
-  .MobileView_AuthBtn {
-    display: grid;
-    gap: 10px;
-  }
-  .mobileView_login {
-    color: #4caf4f;
-    text-align: center;
-  }
-  .mobileView_SignUp {
-    color: white;
-    background-color: #4caf4f;
-    border-radius: 6px;
-    padding: 5px;
-    text-align: center;
+@media (min-width: 769px) {
+  .mobile_View_nav {
+    display: none !important;
   }
 }
