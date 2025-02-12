@@ -31,7 +31,7 @@ const Navigation = () => {
         {/* Middle - Navigation items (desktop) */}
         <div className="hidden md:flex items-center destop_navlinks">
           {navItems.map((item) => (
-            <a key={item} href="#" className="Header_nav_link">
+            <a key={item} href="/contact" className="Header_nav_link">
               {item}
             </a>
           ))}
@@ -39,10 +39,10 @@ const Navigation = () => {
 
         {/* Right side - Auth buttons */}
         <div className="hidden md:flex items-center">
-          <a href="#" className="login_btn">
+          <a href="/login" className="login_btn">
             Login
           </a>
-          <a href="#" className="sigUp_btn">
+          <a href="/signUp" className="sigUp_btn">
             Sign up
           </a>
         </div>
@@ -83,15 +83,15 @@ const Navigation = () => {
       {isMenuOpen && (
         <div className="mobile_View_nav md:hidden items-center">
           {navItems.map((item) => (
-            <a key={item} href="#" className="mobileView_link block gap-6 ">
+            <a key={item} href="/contact" className="mobileView_link block gap-6 ">
               {item}
             </a>
           ))}
           <div className="MobileView_AuthBtn">
-            <a href="#" className="mobileView_login">
+            <a href="/login" className="mobileView_login">
               Login
             </a>
-            <a href="#" className="mobileView_SignUp">
+            <a href="/SignUp" className="mobileView_SignUp">
               Sign up
             </a>
           </div>

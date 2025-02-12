@@ -2,7 +2,7 @@ import React from "react";
 import "./App.css";
 import "./output.css";
 
-import MiddlewareComponents from "./middleware.tsx";
+import MiddlewareComponents from "./middleware";
 
 function App() {
   return (
