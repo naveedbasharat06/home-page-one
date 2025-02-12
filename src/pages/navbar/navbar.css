@@ -1,0 +1,158 @@
+.navbar_main {
+  background-color: #f5f7fa;
+}
+.desktop_viewNav {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+.destop_navlinks {
+  /* display: flex;
+  justify-content: space-evenly; */
+}
+#website_Logo {
+  width: 32px;
+}
+.Header_nav_link {
+  gap: 10px;
+  margin: 10px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #18191f;
+  line-height: 24px;
+}
+.login_btn {
+  color: #4caf4f;
+  line-height: 24px;
+  font-size: 14px;
+  margin-right: 14px;
+}
+.sigUp_btn {
+  border-radius: 6px;
+  padding: 10px 20px;
+  background-color: #4caf4f;
+  color: white;
+  gap: 10px;
+  line-height: 24px;
+  font-size: 14px;
+}
+@media (max-width: 1024px) {
+  .navbar_main {
+    background-color: #f5f7fa;
+    max-width: 1024px;
+  }
+  .desktop_viewNav {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+  }
+  .destop_navlinks {
+    /* display: flex;
+        justify-content: space-evenly; */
+  }
+  .Header_nav_link {
+    gap: 5px;
+    margin: 8px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #18191f;
+    line-height: 24px;
+  }
+  .login_btn {
+    color: #4caf4f;
+    line-height: 24px;
+    font-size: 14px;
+  }
+  .sigUp_btn {
+    border-radius: 6px;
+    padding: 8px 15px;
+    background-color: #4caf4f;
+    color: white;
+    gap: 10px;
+    line-height: 24px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 14px;
+    margin-left: 0px;
+  }
+}
+@media (max-width: 768px) {
+  .navbar_main {
+    background-color: #f5f7fa;
+  }
+  .desktop_viewNav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 30px;
+    width: 100%;
+  }
+  .destop_navlinks {
+    /* display: flex;
+    justify-content: space-evenly; */
+  }
+  .mobile_View_nav {
+    position: relative;
+    left: 8%;
+    width: 85%;
+  }
+  /* #website_Logo {
+    width: 35px !important;
+  } */
+  .mobileView_link {
+    padding-top: 5px;
+  }
+
+  .MobileView_AuthBtn {
+    display: grid;
+    gap: 10px;
+  }
+  .mobileView_login {
+    color: #4caf4f;
+    text-align: center;
+  }
+  .mobileView_SignUp {
+    color: white;
+    background-color: #4caf4f;
+    border-radius: 6px;
+
+    padding: 8px;
+    text-align: center;
+  }
+}
+@media (max-width: 425px) {
+  .navbar_main {
+    background-color: #f5f7fa;
+  }
+  .desktop_viewNav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    width: 100%;
+    /* background-color: rgb(154, 206, 206); */
+  }
+  .mobile_View_nav {
+    position: relative;
+    left: 12%;
+    width: 80%;
+  }
+  .mobileView_link {
+    padding-top: 5px;
+  }
+
+  .MobileView_AuthBtn {
+    display: grid;
+    gap: 10px;
+  }
+  .mobileView_login {
+    color: #4caf4f;
+    text-align: center;
+  }
+  .mobileView_SignUp {
+    color: white;
+    background-color: #4caf4f;
+    border-radius: 6px;
+    padding: 5px;
+    text-align: center;
+  }
+}

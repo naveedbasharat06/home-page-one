@@ -1,0 +1,18 @@
+@import "tailwindcss";
+/* Base reset and box sizing */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Custom 1440px container with responsive padding */
+.App {
+  max-width: 1440px;
+  margin: 0 auto;
+  min-height: auto;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  font-family: "Inter" !important;
+}
