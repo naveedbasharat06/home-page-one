@@ -30,14 +30,14 @@ const CommunityCard_Data: CommunityCard[] = [
     id: 2,
     icon: NationalIcon,
 
-    heading: "Membership Organisations",
+    heading: "National Associations",
     description:
       "Our membership management software provides full automation of membership renewals and payments",
   },
   {
     id: 2,
     icon: ClubIcon,
-    heading: "Membership Organisations",
+    heading: "Clubs And Groups",
     description:
       "Our membership management software provides full automation of membership renewals and payments",
   },
@@ -73,7 +73,6 @@ const OurClient = () => {
           {CommunityCard_Data.map((card, index) => (
             <div key={index} className="card">
               <img src={card.icon} alt={card.heading} />
-
               <h2>{card.heading}</h2>
               <p>{card.description}</p>
             </div>
