@@ -27,7 +27,7 @@ const Navigation = () => {
         {/* Desktop Nav Links */}
         <div className="destop_navlinks">
           {navItems.map((item) => (
-            <a key={item} href="#" className="Header_nav_link">
+            <a key={item} href="#page" className="Header_nav_link">
               {item}
             </a>
           ))}
@@ -66,7 +66,7 @@ const Navigation = () => {
       {isMenuOpen && (
         <div className="mobile_View_nav">
           {navItems.map((item) => (
-            <a key={item} href="#" className="mobileView_link">
+            <a key={item} href="#page" className="mobileView_link">
               {item}
             </a>
           ))}
