@@ -1,7 +1,7 @@
 import { useState } from "react";
 import CompanyIcon from "../../images/Icon1.png";
 import "./navbar.css";
-
+import { motion, AnimatePresence } from "framer-motion";
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -47,6 +47,7 @@ const Navigation = () => {
         <button
           className="mobile-menu-button"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
+          aria-expanded={isMenuOpen}
         >
           <svg
             className="hamburger-icon"
@@ -63,23 +64,31 @@ const Navigation = () => {
       </div>
 
       {/* Mobile Navigation */}
-      {isMenuOpen && (
-        <div className="mobile_View_nav">
-          {navItems.map((item) => (
-            <a key={item} href="#page" className="mobileView_link">
-              {item}
-            </a>
-          ))}
-          <div className="MobileView_AuthBtn">
-            <a href="#login" className="mobileView_login">
-              Login
-            </a>
-            <a href="#signup" className="mobileView_SignUp">
-              Sign up
-            </a>
-          </div>
-        </div>
-      )}
+      <AnimatePresence>
+        {isMenuOpen && (
+          <motion.div
+            className="mobile_View_nav"
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -20 }}
+            transition={{ duration: 0.5, ease: "easeInOut" }}
+          >
+            {navItems.map((item) => (
+              <a key={item} href="#page" className="mobileView_link">
+                {item}
+              </a>
+            ))}
+            <div className="MobileView_AuthBtn">
+              <a href="#login" className="mobileView_login">
+                Login
+              </a>
+              <a href="#signup" className="mobileView_SignUp">
+                Sign up
+              </a>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </nav>
   );
 };
