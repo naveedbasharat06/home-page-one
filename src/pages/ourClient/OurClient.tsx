@@ -117,6 +117,7 @@ const OurClient = () => {
         </Swiper>
         {/* </div> */}
       </div>
+
       {/* community Card */}
       <div className="community_div">
         <div className="community_header text-center">

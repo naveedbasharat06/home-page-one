@@ -28,7 +28,7 @@ const HeroSection = () => {
             clickable: true,
             renderBullet: (index, className) => {
               return `<span class="${className} mt-6 " style="background-color: ${
-                index === activeSlide ? "#ff7f50" : "gray"
+                index === activeSlide ? "#ff7f50" : "lightgreen"
               } "></span>`;
             },
           }}

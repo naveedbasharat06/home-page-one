@@ -1,19 +1,18 @@
 /* Hero Section Styles */
 /* Change the color of inactive dots */
 .swiper-pagination-bullet {
-  background-color: gray !important; /* Default dot color */
-  width: 12px;
-  height: 12px;
+  background-color: #b4e2b6 !important; /* Your desired active dot color */
+
+  width: 10px;
+  height: 10px;
   opacity: 1;
-  transition: background-color 0.3s ease;
 }
 
 /* Change the color of the active dot */
 .swiper-pagination-bullet-active {
   background-color: #4caf4f !important; /* Your desired active dot color */
-  width: 14px;
-  height: 14px;
-  border: 2px solid #fff; /* Optional border */
+  width: 10px;
+  height: 10px;
 }
 
 .heroSection {
@@ -41,6 +40,9 @@
   font-weight: 600;
   color: #4d4d4d;
   z-index: 2;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
   /* display: inline-block; */
   /* white-space: nowrap; */
   /* margin-bottom: -15px; */
@@ -67,6 +69,8 @@
   padding: 14px 32px;
   border-radius: 4px;
   font-weight: 500;
+  letter-spacing: 0%;
+  text-align: center;
   gap: 10px;
   margin-top: 32px;
   transition: all 0.3s ease;
@@ -100,8 +104,10 @@
     z-index: 2;
   }
   .heroHeading h2 {
-    font-size: 54px;
+    font-size: 48px;
     text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
     /* word-spacing: 20px; */
   }
   .herosubheading {

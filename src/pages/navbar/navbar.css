@@ -16,7 +16,7 @@
 .brand-section {
   display: flex;
   align-items: center;
-  gap: 3px;
+  gap: 8px;
 }
 
 #website_Logo {
@@ -119,7 +119,11 @@
   .mobile-menu-button {
     display: block;
   }
-
+  .brand-section {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+  }
   .mobile_View_nav {
     display: block;
   }
