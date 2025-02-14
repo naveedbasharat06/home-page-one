@@ -52,7 +52,7 @@ const BusinessRecord = () => {
         </div>
         {/* business achievments */}
         <div className="business_achievements">
-          <div className="member_clubs sm:flex md:flex lg:flex xl:flex gap-20">
+          <div className="member_clubs sm:flex md:flex lg:flex xl:flex">
             <div className="members_Card sm:flex md:flex lg:flex xl:flex gap-20">
               <span>
                 <img className="cardIcon" src={memberIcons} alt="memeberIcon" />
@@ -64,7 +64,7 @@ const BusinessRecord = () => {
                 <p className="catagory">{BusinessRecord_Data[0].catagory}</p>
               </span>
             </div>
-            <div className="clubs_Card sm:flex md:flex lg:flex xl:flex gap-4">
+            <div className="clubs_Card sm:flex md:flex lg:flex xl:flex gap-20">
               <span>
                 <img className="cardIcon" src={clubIcon} alt="memeberIcon" />
               </span>
@@ -76,8 +76,8 @@ const BusinessRecord = () => {
               </span>
             </div>
           </div>
-          <div className="EventBooking_payment sm:flex md:flex lg:flex xl:flex gap-4">
-            <div className="EventBooking_Card sm:flex md:flex lg:flex xl:flex gap-4">
+          <div className="EventBooking_payment sm:flex md:flex lg:flex xl:flex">
+            <div className="EventBooking_Card sm:flex md:flex lg:flex xl:flex gap-20">
               <span>
                 <img
                   className="cardIcon"
@@ -92,7 +92,7 @@ const BusinessRecord = () => {
                 <p className="catagory">{BusinessRecord_Data[2].catagory}</p>
               </span>
             </div>
-            <div className="payment_Card sm:flex md:flex lg:flex xl:flex gap-4">
+            <div className="payment_Card sm:flex md:flex lg:flex xl:flex gap-20">
               <span>
                 <img className="cardIcon" src={paymentIcon} alt="memeberIcon" />
               </span>

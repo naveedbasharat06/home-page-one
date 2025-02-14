@@ -9,6 +9,8 @@
   padding: 64px 144px;
 }
 .business_text {
+  gap: 8px;
+  /* width: 540px; */
 }
 /* .business_heaing {
 } */
@@ -41,28 +43,32 @@
   display: grid;
   align-items: center;
   position: relative;
-  right: 14%;
+  right: 10%;
 }
 .member_clubs {
   gap: 40px;
+  align-items: center;
 }
-.business_icons {
-}
-.countDownRecords {
-}
-.catagory {
-}
+
 .members_Card {
   gap: 16px;
+  align-items: center;
 }
 .clubs_Card {
   gap: 16px;
+  align-items: center;
 }
 .EventBooking_payment {
   gap: 40px;
+  align-items: center;
 }
 .EventBooking_Card {
   gap: 16px;
+  align-items: center;
+}
+.payment_Card {
+  gap: 16px;
+  align-items: center;
 }
 .cardIcon {
   width: 48px;
@@ -82,6 +88,169 @@
   letter-spacing: 0%;
   color: #717171;
 }
-.payment_Card {
-  gap: 16px;
+@media (max-width: 1280px) {
+  .business_transformation {
+    max-width: 1280px;
+  }
+  .business_detail {
+    padding: 40px 80px;
+  }
+
+  /* .business_heaing {
+  } */
+  #black_text {
+    font-size: 35px;
+  }
+  #green_text {
+    font-size: 35px;
+  }
+  #business_description {
+    font-size: 15px;
+  }
+  /* Business Achievment cards style */
+  .business_achievements {
+    right: 10%;
+    gap: 30px;
+  }
+  .countDownRecords {
+    font-size: 25px;
+  }
+
+  .catagory {
+    font-size: 15px;
+  }
+  .cardIcon {
+    width: 45px;
+  }
+}
+@media (max-width: 1024px) {
+  .business_transformation {
+    background-color: #f5f7fa;
+    max-width: 1024px;
+  }
+  .business_detail {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 50px;
+  }
+  .business_text {
+    gap: 8px;
+    /* width: 540px; */
+  }
+  /* .business_heaing {
+  } */
+  #black_text {
+    font-size: 34px;
+  }
+  #green_text {
+    font-size: 34px;
+  }
+  #business_description {
+    font-size: 15px;
+  }
+  /* Business Achievment cards style */
+  .business_achievements {
+    gap: 12px;
+    right: 2%;
+  }
+  .member_clubs {
+    gap: 30px;
+    align-items: center;
+  }
+
+  .members_Card {
+    gap: 16px;
+    align-items: center;
+  }
+  .clubs_Card {
+    gap: 16px;
+    align-items: center;
+  }
+  .EventBooking_payment {
+    gap: 40px;
+    align-items: center;
+  }
+  .EventBooking_Card {
+    gap: 16px;
+    align-items: center;
+  }
+  .payment_Card {
+    gap: 16px;
+    align-items: center;
+  }
+  .cardIcon {
+    width: 40px;
+  }
+  .countDownRecords {
+    font-size: 25px;
+  }
+
+  .catagory {
+    font-size: 15px;
+  }
+}
+@media (max-width: 960px) {
+  .business_transformation {
+    background-color: #f5f7fa;
+    max-width: 960px;
+  }
+  .business_detail {
+    padding: 20px 40px;
+  }
+  .business_text {
+    gap: 8px;
+    /* width: 540px; */
+  }
+  /* .business_heaing {
+  } */
+  #black_text {
+    font-size: 32px;
+  }
+  #green_text {
+    font-size: 32px;
+  }
+  #business_description {
+    font-size: 13px;
+  }
+  /* Business Achievment cards style */
+  .business_achievements {
+    gap: 10px;
+    left: 0%;
+  }
+  .member_clubs {
+    gap: 30px;
+    align-items: center;
+  }
+
+  .members_Card {
+    gap: 16px;
+    align-items: center;
+  }
+  .clubs_Card {
+    gap: 16px;
+    align-items: center;
+  }
+  .EventBooking_payment {
+    gap: 40px;
+    align-items: center;
+  }
+  .EventBooking_Card {
+    gap: 16px;
+    align-items: center;
+  }
+  .payment_Card {
+    gap: 16px;
+    align-items: center;
+  }
+  .cardIcon {
+    width: 35px;
+  }
+  .countDownRecords {
+    font-size: 25px;
+  }
+
+  .catagory {
+    font-size: 15px;
+  }
 }

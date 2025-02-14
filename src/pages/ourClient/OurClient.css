@@ -1,5 +1,6 @@
 .main_div {
   background-color: white;
+  padding-top: 40px;
 }
 .client_div {
   margin-left: 144px;
@@ -25,13 +26,13 @@
 .client_Icons {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   margin-top: 14px;
-  padding: 25px 0px;
+  padding: 10px 0px;
 }
 .client_icon {
-  width: calc(100% / 7);
-  max-width: 40px;
+  width: auto;
+  /* max-width: 60px; */
 }
 /* Community Card style */
 .community_div {
@@ -100,9 +101,9 @@
 /* pixel Grade year style */
 .pixelgrade_year {
   display: flex;
-  margin: 24px 144px;
+  margin: 0px 144px;
+  padding-bottom: 50px;
   align-items: center;
-  padding-bottom: 25px;
 }
 .pixelGrade_img_div {
 }
@@ -143,8 +144,19 @@
   .client_div {
     margin-left: 80px;
     margin-right: 80px;
+    padding-top: 30px;
   }
-
+  .client_Icons {
+    /* flex-direction: row; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* margin-top: 14px;
+    padding: 15px 0px; */
+  }
+  .client_icon {
+    width: auto;
+  }
   /* Community Card style */
   .community_div {
     margin-top: 35px;
@@ -164,7 +176,7 @@
   }
   /* pixel Grade year style */
   .pixelgrade_year {
-    margin: 20px 80px;
+    margin: 0px 80px;
   }
   .pixelGrade_img_div {
   }
@@ -186,13 +198,26 @@
 }
 @media (max-width: 960px) {
   .main_div {
-    padding-top: 40px;
+    padding-top: 20px;
   }
   .client_div {
     margin-left: 40px;
     margin-right: 40px;
   }
-
+  .client_Icons {
+    /* flex-direction: row; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 14px;
+    padding: 15px 0px;
+  }
+  .client_icon {
+    width: 36px;
+    /* max-width: 60px; */
+    height: auto;
+    transition: transform 0.3s ease;
+  }
   .client_heading {
     align-items: center;
   }
@@ -202,10 +227,10 @@
   .client_heading p {
     font-size: 16px;
   }
-  .client_Icons {
+  /* .client_Icons {
     margin-top: 14px;
     padding: 25px 0px;
-  }
+  } */
   /* Community Card style */
   .community_div {
     margin-top: 30px;
@@ -242,7 +267,7 @@
   /* pixel Grade year style */
   .pixelgrade_year {
     display: flex;
-    margin: 18px 40px;
+    margin: 0px 40px;
     align-items: center;
   }
   .pixelGrade_img_div {
@@ -271,7 +296,7 @@
 }
 @media (max-width: 768px) {
   .main_div {
-    padding-top: 30px;
+    padding-top: 15px;
   }
   .client_div {
     margin-left: 20px;
@@ -286,15 +311,15 @@
   }
   .client_Icons {
     display: flex;
-    flex-wrap: wrap;
+
     align-items: center;
+
     justify-content: space-between;
-    margin-top: 10px;
-    gap: 5px;
+    margin-top: 20px;
+    /* gap: 5px; */
   }
   .client_icon {
-    width: calc(100% / 4);
-    max-width: 30px;
+    /* width: 40%; */
   }
   /* Community Card style */
   .community_div {
@@ -354,7 +379,7 @@
   /* pixel Grade year style */
   .pixelgrade_year {
     flex-direction: column;
-    margin: 18px 20px;
+    margin: 0px 20px;
     align-items: center;
     justify-content: center;
   }
@@ -385,6 +410,7 @@
   .client_div {
     margin-left: 16px;
     margin-right: 16px;
+    padding-top: 10px;
   }
 
   .client_heading {
@@ -398,16 +424,13 @@
   }
   .client_Icons {
     display: flex;
-
     align-items: center;
     justify-content: space-between;
     margin-top: 10px;
-
     gap: 10px;
   }
   .client_icon {
-    width: calc(100% / 2);
-    max-width: 30px;
+    /* max-width: 40px; */
   }
   /* Community Card style */
   .community_div {
@@ -481,4 +504,26 @@
     padding: auto;
     margin-top: 20px;
   }
+}
+/* slider icons style*/
+/* Update CSS for responsiveness */
+
+/* Remove the existing .client_Icons CSS and replace with: */
+.client_Icons {
+  /* margin-top: 14px;
+  padding: 25px 0;
+
+  .swiper {
+    padding: 10px 0;
+  } */
+
+  /* .swiper-button-next,
+  .swiper-button-prev {
+    color: #4caf4f;
+    --swiper-navigation-size: 24px;
+  } */
+
+  /* .swiper-pagination-bullet-active {
+    background: #4caf4f;
+  } */
 }

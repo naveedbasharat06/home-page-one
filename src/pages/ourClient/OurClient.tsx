@@ -12,6 +12,12 @@ import NationalIcon from "../../images/NationalIcon.png";
 import ClubIcon from "../../images/ClubIcon.png";
 import frame35 from "../../images/Frame 35.png";
 import "./OurClient.css";
+// Update the imports at the top
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 interface CommunityCard {
   id: number;
   icon: any;
@@ -50,15 +56,66 @@ const OurClient = () => {
           <h2>Our Client</h2>
           <p>We have been working with some Fortune 500+ clients</p>
         </div>
-        <div className="client_Icons">
-          <img src={Icon1} alt="icon 1" className="client_icon" />
-          <img src={Icon2} alt="icon 2" className="client_icon" />
-          <img src={Icon3} alt="icon 3" className="client_icon" />
-          <img src={Icon4} alt="icon 4" className="client_icon" />
-          <img src={Icon5} alt="icon 5" className="client_icon" />
-          <img src={Icon6} alt="icon 6" className="client_icon" />
-          <img src={Icon7} alt="icon 7" className="client_icon" />
-        </div>
+        {/* <div className=""> */}
+        <Swiper
+          className="mx-auto"
+          modules={[Navigation, Pagination]}
+          spaceBetween={10}
+          slidesPerView={4}
+          loop={true}
+          navigation={false}
+          // pagination={{ clickable: false }}
+          breakpoints={{
+            // when window width is >= 320px
+            290: {
+              slidesPerView: 4,
+              spaceBetween: 5,
+            },
+            320: {
+              slidesPerView: 4,
+              spaceBetween: 10,
+            },
+            // when window width is >= 480px
+            480: {
+              slidesPerView: 4,
+              spaceBetween: 10,
+            },
+            // when window width is >= 640px
+
+            768: {
+              slidesPerView: 5,
+              spaceBetween: 10,
+            },
+            1024: {
+              slidesPerView: 7,
+              spaceBetween: 20,
+            },
+            1440: {
+              slidesPerView: 7,
+              spaceBetween: 20,
+            },
+          }}
+        >
+          {/* <img src={Icon1} alt="icon 1" className="client_icon" />
+            <img src={Icon2} alt="icon 2" className="client_icon" />
+            <img src={Icon3} alt="icon 3" className="client_icon" />
+            <img src={Icon4} alt="icon 4" className="client_icon" />
+            <img src={Icon5} alt="icon 5" className="client_icon" />
+            <img src={Icon6} alt="icon 6" className="client_icon" />
+            <img src={Icon7} alt="icon 7" className="client_icon" /> */}
+          {[Icon1, Icon2, Icon3, Icon4, Icon5, Icon6, Icon7].map(
+            (icon, index) => (
+              <SwiperSlide key={index} className="client_Icons mx-auto">
+                <img
+                  src={icon}
+                  alt={`client icon ${index + 1}`}
+                  className="client_icon"
+                />
+              </SwiperSlide>
+            )
+          )}
+        </Swiper>
+        {/* </div> */}
       </div>
       {/* community Card */}
       <div className="community_div">

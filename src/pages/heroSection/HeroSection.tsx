@@ -27,12 +27,12 @@ const HeroSection = () => {
           pagination={{
             clickable: true,
             renderBullet: (index, className) => {
-              return `<span class="${className}" style="background-color: ${
+              return `<span class="${className} mt-6 " style="background-color: ${
                 index === activeSlide ? "#ff7f50" : "gray"
-              };"></span>`;
+              } "></span>`;
             },
           }}
-          navigation={true}
+          navigation={false}
           onSlideChange={handleSlideChange}
           className="mySwiper"
         >

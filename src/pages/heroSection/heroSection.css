@@ -58,20 +58,24 @@
   line-height: 24px;
   font-weight: 400;
   letter-spacing: 0;
+  margin-top: 16px;
 }
 
 .heroCta {
   background-color: #4caf4f;
   color: white;
   padding: 14px 32px;
-  border-radius: 6px;
+  border-radius: 4px;
   font-weight: 500;
   gap: 10px;
   margin-top: 32px;
   transition: all 0.3s ease;
+  font-size: 16px;
 }
 #heroSection_Image {
   width: 391px;
+  position: relative;
+  right: 4%;
 }
 .heroCta:hover {
   background-color: #45a049;
@@ -79,35 +83,6 @@
 }
 /* Add to existing CSS */
 
-.sliderDots {
-  position: absolute;
-  bottom: 2rem;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  gap: 0.75rem;
-  z-index: 10;
-}
-
-.sliderDot {
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background-color: #e5e7eb;
-  transition: all 0.3s ease;
-  cursor: pointer;
-  border: none;
-  padding: 0;
-}
-
-.sliderDot.active {
-  background-color: #4caf4f;
-  transform: scale(1.2);
-}
-
-.sliderDot:hover {
-  background-color: #9ca3af;
-}
 @media (max-width: 1366px) {
   /* Hero Section Styles */
   .heroSection {
@@ -147,20 +122,36 @@
   }
   .hero_flex_section {
     /* gap: 104px; */
-    margin: 64px 70px;
+    margin: 40px 50px;
   }
 
   .heroHeading h2 {
-    font-size: 41px;
-
-    /* word-spacing: 20px; */
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 50px;
   }
   .herosubheading {
-    font-size: 40px;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 50px;
+    font-weight: 600;
   }
+  .heroSubtext {
+    font-size: 15px;
 
+    line-height: 20px;
+
+    margin-top: 12px;
+  }
   #heroSection_Image {
-    width: 371px;
+    width: 301px;
+  }
+  .heroCta {
+    padding: 12px 28px;
+
+    margin-top: 28px;
+    transition: all 0.3s ease;
+    font-size: 16px;
   }
 }
 @media (max-width: 960px) {
@@ -169,7 +160,7 @@
     max-width: 960px;
   }
   .hero_flex_section {
-    margin: 64px 70px;
+    margin: 40px 50px;
   }
 
   .heroHeading h2 {
@@ -198,20 +189,23 @@
   /* Hero Section Styles */
   .heroSection {
     max-width: 768px;
+    padding-bottom: 20px;
   }
   .hero_flex_section {
     flex-direction: column;
     align-items: center;
     margin: 20px;
   }
-
+  .SliderDots {
+    margin-top: 40px; /* Increase spacing for mobile */
+  }
   .heroHeading h2 {
-    font-size: 40px;
-    margin-bottom: -25px;
+    font-size: 44px;
+    margin-bottom: 0;
+    /* line-height: 24px; */
   }
   .herosubheading {
-    font-size: 40px;
-    margin-bottom: -25px;
+    font-size: 44px;
     color: #4caf4f;
   }
   .heroSubtext {
@@ -220,20 +214,18 @@
 
   .heroCta {
     padding: 13px 30px;
-
     width: 100%;
   }
   #heroSection_Image {
-    width: 285px;
+    width: 300px;
     position: relative;
     left: 6%;
+    top: 10%;
+    margin-bottom: 30px;
   }
   .heroCta:hover {
     background-color: #45a049;
     transform: translateY(-2px);
-  }
-  .sliderDots {
-    bottom: 5%;
   }
 }
 
@@ -245,6 +237,8 @@
 
   .heroHeading h2 {
     font-size: 30px;
+    margin-bottom: 0;
+    line-height: 24px;
   }
   .herosubheading {
     font-size: 30px;
@@ -260,9 +254,9 @@
     margin-top: -20px;
   }
   #heroSection_Image {
-    width: 250px;
+    width: 270px;
     position: relative;
-    left: 16%;
+    left: 10%;
     top: 0%;
   }
 
@@ -283,10 +277,10 @@
 
   .heroHeading h2 {
     font-size: 30px;
+    margin-bottom: 0;
   }
   .herosubheading {
     font-size: 30px;
-    margin-bottom: -25px;
   }
   .heroSubtext {
     font-size: 12px;
@@ -297,9 +291,9 @@
   }
 
   #heroSection_Image {
-    width: 250px;
+    width: 265px;
     position: relative;
-    left: 16%;
+    left: 8%;
     top: 0%;
   }
 }
@@ -316,6 +310,7 @@
 
   .heroHeading h2 {
     font-size: 24px;
+    margin-bottom: 0;
   }
   .herosubheading {
     font-size: 24px;
