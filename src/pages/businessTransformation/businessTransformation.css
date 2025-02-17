@@ -44,9 +44,10 @@
   align-items: center;
   position: relative;
   right: 10%;
+  /* width: 490px; */
 }
 .member_clubs {
-  gap: 40px;
+  gap: 30px;
   align-items: center;
 }
 
@@ -59,7 +60,7 @@
   align-items: center;
 }
 .EventBooking_payment {
-  gap: 40px;
+  gap: 30px;
   align-items: center;
 }
 .EventBooking_Card {
@@ -152,7 +153,7 @@
   }
   /* Business Achievment cards style */
   .business_achievements {
-    gap: 12px;
+    gap: 15px;
     right: 2%;
   }
   .member_clubs {

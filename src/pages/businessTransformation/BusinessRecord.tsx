@@ -57,76 +57,78 @@ const BusinessRecord = () => {
         </div>
         {/* business achievments */}
         <div className="business_achievements">
-          <div className="member_clubs sm:flex md:flex lg:flex xl:flex">
-            <div className="members_Card sm:flex md:flex lg:flex xl:flex gap-20">
-              <span>
-                <img className="cardIcon" src={memberIcons} alt="memeberIcon" />
-              </span>
-              <span>
-                {inView && (
-                  <CountUp
-                    end={BusinessRecord_Data[0].countDownRecords}
-                    duration={2}
-                    separator=","
-                    className="countDownRecords"
-                  />
-                )}
+          <div className="member_clubs flex sm:flex-row">
+            <div className="members_Card flex align-middle">
+              {/* <span> */}
+              <img className="cardIcon" src={memberIcons} alt="memeberIcon" />
+              {/* </span> */}
+              <div>
+                <h2 className="countDownRecords">
+                  {inView && (
+                    <CountUp
+                      end={BusinessRecord_Data[0].countDownRecords}
+                      duration={2}
+                      separator=","
+                      // className="countDownRecords"
+                    />
+                  )}
+                </h2>
                 <p className="catagory">{BusinessRecord_Data[0].catagory}</p>
-              </span>
+              </div>
             </div>
-            <div className="clubs_Card sm:flex md:flex lg:flex xl:flex gap-20">
-              <span>
-                <img className="cardIcon" src={clubIcon} alt="memeberIcon" />
-              </span>
-              <span>
-                {inView && (
-                  <CountUp
-                    end={BusinessRecord_Data[1].countDownRecords}
-                    duration={2}
-                    separator=","
-                    className="countDownRecords"
-                  />
-                )}
+            <div className="clubs_Card flex sm:flex-row">
+              <img className="cardIcon" src={clubIcon} alt="memeberIcon" />
+
+              <div>
+                <h2 className="countDownRecords">
+                  {inView && (
+                    <CountUp
+                      end={BusinessRecord_Data[1].countDownRecords}
+                      duration={2}
+                      separator=","
+                    />
+                  )}
+                </h2>
                 <p className="catagory">{BusinessRecord_Data[1].catagory}</p>
-              </span>
+              </div>
             </div>
           </div>
-          <div className="EventBooking_payment sm:flex md:flex lg:flex xl:flex">
-            <div className="EventBooking_Card sm:flex md:flex lg:flex xl:flex gap-20">
-              <span>
-                <img
-                  className="cardIcon"
-                  src={eventBookingIcon}
-                  alt="memeberIcon"
-                />
-              </span>
-              <span>
-                {inView && (
-                  <CountUp
-                    end={BusinessRecord_Data[2].countDownRecords}
-                    duration={2}
-                    separator=","
-                    className="countDownRecords"
-                  />
-                )}
+          <div className="EventBooking_payment flex sm:flex-row">
+            <div className="EventBooking_Card flex sm:flex-row">
+              <img
+                className="cardIcon"
+                src={eventBookingIcon}
+                alt="memeberIcon"
+              />
+
+              <div>
+                <h2 className="countDownRecords">
+                  {inView && (
+                    <CountUp
+                      end={BusinessRecord_Data[2].countDownRecords}
+                      duration={2}
+                      separator=","
+                    />
+                  )}
+                </h2>
                 <p className="catagory">{BusinessRecord_Data[2].catagory}</p>
-              </span>
+              </div>
             </div>
-            <div className="payment_Card sm:flex md:flex lg:flex xl:flex gap-20">
-              <span>
-                <img className="cardIcon" src={paymentIcon} alt="memeberIcon" />
-              </span>
-              <span>
-                {inView && (
-                  <CountUp
-                    end={BusinessRecord_Data[3].countDownRecords}
-                    duration={2}
-                    separator=","
-                    className="countDownRecords"
-                  />
-                )}
+            <div className="payment_Card flex sm:flex-row">
+              <img className="cardIcon" src={paymentIcon} alt="memeberIcon" />
+
+              <div>
+                <h2 className="countDownRecords">
+                  {inView && (
+                    <CountUp
+                      end={BusinessRecord_Data[3].countDownRecords}
+                      duration={2}
+                      separator=","
+                    />
+                  )}
+                </h2>
                 <p className="catagory">{BusinessRecord_Data[3].catagory}</p>
-              </span>
+              </div>
             </div>
           </div>
         </div>

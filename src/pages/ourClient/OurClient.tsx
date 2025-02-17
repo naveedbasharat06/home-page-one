@@ -14,10 +14,11 @@ import frame35 from "../../images/Frame 35.png";
 import "./OurClient.css";
 // Update the imports at the top
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination } from "swiper/modules";
+import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import "swiper/css/autoplay";
 interface CommunityCard {
   id: number;
   icon: any;
@@ -58,32 +59,37 @@ const OurClient = () => {
         </div>
         {/* <div className=""> */}
         <Swiper
-          className="mx-auto"
-          modules={[Navigation, Pagination]}
-          spaceBetween={10}
-          slidesPerView={4}
+          className="mx-auto flex justify-between"
+          modules={[Navigation, Pagination, Autoplay]}
+          spaceBetween="auto"
+          slidesPerView="auto"
           loop={true}
           navigation={false}
+          autoplay={{
+            delay: 0, // No delay, continuous movement
+            disableOnInteraction: false, // Keep autoplay active on user interaction
+          }}
+          speed={2000}
           // pagination={{ clickable: false }}
           breakpoints={{
             // when window width is >= 320px
             290: {
-              slidesPerView: 4,
+              slidesPerView: 3,
               spaceBetween: 5,
             },
             320: {
-              slidesPerView: 4,
+              slidesPerView: 3,
               spaceBetween: 10,
             },
             // when window width is >= 480px
             480: {
-              slidesPerView: 4,
+              slidesPerView: 3,
               spaceBetween: 10,
             },
             // when window width is >= 640px
 
             768: {
-              slidesPerView: 5,
+              slidesPerView: 4,
               spaceBetween: 10,
             },
             1024: {
@@ -96,16 +102,12 @@ const OurClient = () => {
             },
           }}
         >
-          {/* <img src={Icon1} alt="icon 1" className="client_icon" />
-            <img src={Icon2} alt="icon 2" className="client_icon" />
-            <img src={Icon3} alt="icon 3" className="client_icon" />
-            <img src={Icon4} alt="icon 4" className="client_icon" />
-            <img src={Icon5} alt="icon 5" className="client_icon" />
-            <img src={Icon6} alt="icon 6" className="client_icon" />
-            <img src={Icon7} alt="icon 7" className="client_icon" /> */}
           {[Icon1, Icon2, Icon3, Icon4, Icon5, Icon6, Icon7].map(
             (icon, index) => (
-              <SwiperSlide key={index} className="client_Icons mx-auto">
+              <SwiperSlide
+                key={index}
+                className="client_Icons flex justify-between"
+              >
                 <img
                   src={icon}
                   alt={`client icon ${index + 1}`}
@@ -138,12 +140,18 @@ const OurClient = () => {
         </div>
       </div>
       {/* PixelGrade_year  */}
-      <div className="pixelgrade_year">
-        <div className="pixelGrade_img_div">
-          <img className="" src={frame35} alt="Pixel Grade Imag" />
+      <div className="pixelgrade_year flex sm:flex-row">
+        {/* Image for Large & Medium screens */}
+        <div className="pixelGrade_img_div large-screen">
+          <img src={frame35} alt="Pixel Grade Imag" />
         </div>
         <div className="pixelGrade_content">
           <h1>The unseen of spending three years at Pixelgrade</h1>
+          {/* Image for Small screens (hidden by default on larger screens) */}
+          <div className="pixelGrade_img_div small-screen">
+            <img src={frame35} alt="Pixel Grade Imag" />
+          </div>
+
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit
             amet justo ipsum. Sed accumsan quam vitae est varius fringilla.

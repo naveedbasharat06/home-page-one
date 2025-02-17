@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination, Navigation } from "swiper/modules"; // Correct way to import modules
+import { Pagination, Navigation, Autoplay } from "swiper/modules"; // Correct way to import modules
 
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-
+import "swiper/css/autoplay";
 import { motion } from "framer-motion";
 import HeroSectionImg from "../../images/Illustration.png";
 import "./heroSection.css";
@@ -23,7 +23,9 @@ const HeroSection = () => {
     <section className="heroSection">
       <div className="w-full mx-auto">
         <Swiper
-          modules={[Pagination, Navigation]}
+          modules={[Pagination, Navigation, Autoplay]}
+          autoplay={{ delay: 2000, disableOnInteraction: false }}
+          loop={true}
           pagination={{
             clickable: true,
             renderBullet: (index, className) => {

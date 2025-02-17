@@ -1,0 +1,233 @@
+.association_banner {
+  background-color: #f5f7fa;
+  padding: 33px 144px;
+}
+.association_banner_flex {
+}
+.association_banner_img {
+}
+.association_banner_img img {
+  width: 100%;
+}
+.association_banner_content {
+  width: 748px;
+  padding-left: 78px;
+}
+.association_banner_content p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0;
+  color: #717171;
+}
+.association_banner_content h2 {
+  color: #4caf4f;
+  font-weight: 600;
+  line-height: 28px;
+  font-size: 20px;
+  margin: 16px 0px 8px;
+  letter-spacing: 0;
+}
+.association_banner_content .profile_title {
+  color: #89939e;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0;
+  margin-bottom: 32px;
+}
+.associationBanner_social {
+}
+.association_banner_Icons {
+}
+.association_banner_Icon {
+  width: 48px;
+}
+.meet_all_customer {
+  color: #4caf4f;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 0%;
+  clear: both;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  z-index: 2;
+}
+@media (max-width: 1280px) {
+  .association_banner {
+    padding: 30px 80px;
+  }
+  .association_banner_flex {
+  }
+  .association_banner_img {
+  }
+  .association_banner_img img {
+    width: 100%;
+  }
+  .association_banner_content {
+    width: 700px;
+    padding-left: 40px;
+  }
+  .association_banner_content p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0;
+    color: #717171;
+  }
+  .association_banner_content h2 {
+    color: #4caf4f;
+    font-weight: 600;
+    line-height: 28px;
+    font-size: 20px;
+    margin: 16px 0px 8px;
+    letter-spacing: 0;
+  }
+  .association_banner_content .profile_title {
+    color: #89939e;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0;
+    margin-bottom: 32px;
+  }
+  .associationBanner_social {
+  }
+  .association_banner_Icons {
+  }
+  .association_banner_Icon {
+    width: 44px;
+  }
+  .meet_all_customer {
+    color: #4caf4f;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0%;
+    clear: both;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+}
+@media (max-width: 1024px) {
+  .association_banner {
+    padding: 20px 40px;
+  }
+  .association_banner_flex {
+  }
+  .association_banner_img {
+  }
+  .association_banner_img img {
+    width: 100%;
+    position: relative;
+  }
+  .association_banner_content {
+    width: 600px;
+    padding-left: 20px;
+  }
+  .association_banner_content p {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 24px;
+    letter-spacing: 0;
+    color: #717171;
+  }
+  .association_banner_content h2 {
+    color: #4caf4f;
+    font-weight: 600;
+    line-height: 26px;
+    font-size: 20px;
+    margin: 16px 0px 8px;
+    letter-spacing: 0;
+  }
+  .association_banner_content .profile_title {
+    color: #89939e;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    letter-spacing: 0;
+    margin-bottom: 32px;
+  }
+  .associationBanner_social {
+  }
+  .association_banner_Icons {
+  }
+  .association_banner_Icon {
+    width: 44px;
+  }
+  .meet_all_customer {
+    color: #4caf4f;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0%;
+    clear: both;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+}
+@media (max-width: 768px) {
+  .association_banner {
+    padding: 20px 16px;
+  }
+  .association_banner_flex {
+    flex-direction: column;
+    align-items: center;
+  }
+  .association_banner_img {
+  }
+  .association_banner_img img {
+    width: 100%;
+    position: relative;
+  }
+  .association_banner_content {
+    width: 100%;
+    padding-left: 0px;
+  }
+  .association_banner_content p {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 24px;
+    letter-spacing: 0;
+    color: #717171;
+  }
+  .association_banner_content h2 {
+    color: #4caf4f;
+    font-weight: 600;
+    line-height: 26px;
+    font-size: 20px;
+    margin: 16px 0px 8px;
+    letter-spacing: 0;
+  }
+  .association_banner_content .profile_title {
+    color: #89939e;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    letter-spacing: 0;
+    margin-bottom: 32px;
+  }
+  .associationBanner_social {
+  }
+  .association_banner_Icons {
+  }
+  .association_banner_Icon {
+    width: 44px;
+  }
+  .meet_all_customer {
+    color: #4caf4f;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 28px;
+    letter-spacing: 0%;
+
+    clear: both;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+}

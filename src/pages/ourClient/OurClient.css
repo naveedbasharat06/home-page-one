@@ -26,11 +26,8 @@
   margin-bottom: 16px;
 }
 .client_Icons {
-  display: flex;
-  align-items: center;
+  padding: 25px 0px;
   justify-content: space-evenly;
-  margin-top: 14px;
-  padding: 10px 0px;
 }
 .client_icon {
   width: auto;
@@ -106,15 +103,22 @@
 /* pixel Grade year style */
 .pixelgrade_year {
   display: flex;
+  /* flex-direction: row; */
   margin: 0px 144px;
   padding-bottom: 50px;
   align-items: center;
 }
-.pixelGrade_img_div {
+/* Default styles for large & medium screens */
+.pixelGrade_img_div.large-screen {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px; /* Space between image and heading */
 }
-.pixelGrade_img_div img {
-  width: 442px;
+
+.pixelGrade_img_div.small-screen {
+  display: none; /* Hide on large screens */
 }
+
 .pixelGrade_content {
   width: 601px;
   margin-left: 40px;
@@ -151,14 +155,11 @@
     margin-right: 80px;
     padding-top: 15px;
   }
-  .client_Icons {
-    /* flex-direction: row; */
+  /* .client_Icons {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* margin-top: 14px;
-    padding: 15px 0px; */
-  }
+  } */
   .client_icon {
     width: auto;
   }
@@ -209,14 +210,14 @@
     margin-left: 40px;
     margin-right: 40px;
   }
-  .client_Icons {
-    /* flex-direction: row; */
+  /* .client_Icons {
+   
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-top: 14px;
     padding: 15px 0px;
-  }
+  } */
   .client_icon {
     width: 36px;
     /* max-width: 60px; */
@@ -283,7 +284,7 @@
   .pixelGrade_img_div {
   }
   .pixelGrade_img_div img {
-    width: 420px;
+    width: 100%;
   }
   .pixelGrade_content {
     width: 601px;
@@ -319,17 +320,16 @@
   .client_heading p {
     font-size: 14px;
   }
-  .client_Icons {
+  /* .client_Icons {
     display: flex;
 
     align-items: center;
-
     justify-content: space-between;
     margin-top: 20px;
-    /* gap: 5px; */
-  }
+ 
+  } */
   .client_icon {
-    /* width: 40%; */
+    width: 40%;
   }
   /* Community Card style */
   .community_div {
@@ -399,17 +399,25 @@
     align-items: center;
     justify-content: center;
   }
-  .pixelGrade_img_div {
+  .pixelGrade_img_div.large-screen {
+    display: none; /* Hide image at top */
   }
-  .pixelGrade_img_div img {
-    width: 350px;
+
+  .pixelGrade_img_div.small-screen {
+    display: flex; /* Show below heading */
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .pixelGrade_img_div.small-screen img {
+    max-width: 100%; /* Adjust size for small screens */
   }
   .pixelGrade_content {
     width: auto;
   }
   .pixelGrade_content h1 {
-    font-size: 30px;
-
+    font-size: 28px;
+    text-align: center;
     margin-bottom: 15px;
   }
   .pixelGrade_content p {
@@ -438,15 +446,15 @@
   .client_heading p {
     font-size: 14px;
   }
-  .client_Icons {
+  /* .client_Icons {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-top: 10px;
     gap: 10px;
-  }
+  } */
   .client_icon {
-    /* max-width: 40px; */
+    width: 60%;
   }
   /* Community Card style */
   .community_div {
