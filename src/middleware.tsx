@@ -5,6 +5,9 @@ import OurClient from "./pages/ourClient/OurClient";
 import BusinessRecord from "./pages/businessTransformation/BusinessRecord";
 import DesignProcess from "./pages/footerDesignProcess/designProcess";
 import AssociationBanner from "./pages/boatRacingAssociationBanner/AssociationBanner";
+import MarketingBlog from "./pages/newMarketingBlog/MarketingBlog";
+import GetDemo from "./pages/getDemo/Demo";
+import Footer from "./pages/footer/footer";
 
 const MiddlewareComponents = () => {
   return (
@@ -15,6 +18,9 @@ const MiddlewareComponents = () => {
       <BusinessRecord />
       <DesignProcess />
       <AssociationBanner />
+      <MarketingBlog />
+      <GetDemo />
+      <Footer />
     </div>
   );
 };

@@ -38,11 +38,11 @@ const AssociationBanner = () => {
           <p className="profile_title">
             British Dragon Boat Racing Association
           </p>
-          <div className="associationBanner_social flex sm:flex-col">
+          <div className="associationBanner_social  flex flex-col sm:flex-row items-center sm:justify-between w-full">
             <Swiper
-              className=""
+              className="w-full sm:w-auto"
               modules={[Navigation, Pagination, Autoplay]}
-              spaceBetween="auto"
+              spaceBetween={10}
               slidesPerView={6}
               loop={true}
               navigation={false}
@@ -51,9 +51,7 @@ const AssociationBanner = () => {
                 disableOnInteraction: false, // Keep autoplay active on user interaction
               }}
               speed={2000}
-              // pagination={{ clickable: false }}
               breakpoints={{
-                // when window width is >= 320px
                 290: {
                   slidesPerView: 3,
                   spaceBetween: 5,
@@ -62,33 +60,29 @@ const AssociationBanner = () => {
                   slidesPerView: 3,
                   spaceBetween: 10,
                 },
-                // when window width is >= 480px
-                480: {
-                  slidesPerView: 3,
-                  spaceBetween: 10,
-                },
-                // when window width is >= 640px
 
-                768: {
-                  slidesPerView: 4,
-                  spaceBetween: 10,
-                },
-                1024: {
+                480: {
                   slidesPerView: 4,
                   spaceBetween: 5,
+                },
+
+                768: {
+                  slidesPerView: 6,
+                  spaceBetween: 3,
+                },
+                1024: {
+                  slidesPerView: 6,
+                  spaceBetween: 2,
                 },
                 1440: {
                   slidesPerView: 6,
-                  spaceBetween: 5,
+                  spaceBetween: 2,
                 },
               }}
             >
               {[BIcon1, BIcon2, BIcon3, BIcon4, BIcon5, BIcon6].map(
                 (icon, index) => (
-                  <SwiperSlide
-                    key={index}
-                    className="association_banner_Icons "
-                  >
+                  <SwiperSlide key={index} className="flex justify-between">
                     <img
                       src={icon}
                       alt={`client icon ${index + 1}`}
@@ -98,7 +92,11 @@ const AssociationBanner = () => {
                 )
               )}
             </Swiper>
-            <button className="meet_all_customer">Meet all customers ➡ </button>
+            <div className="w-[50] sm:w-full text-center sm:mt-4">
+              <button className="meet_all_customer sm:text-left">
+                Meet all customers ➡
+              </button>
+            </div>
           </div>
         </div>
       </div>
