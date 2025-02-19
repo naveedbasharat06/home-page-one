@@ -29,7 +29,7 @@ const BusinessRecord_Data: BusinessRecordT[] = [
     Id: 2,
     icon: eventBookingIcon,
     countDownRecords: 828867,
-    catagory: "Event Booking",
+    catagory: "Event Bookings",
   },
   {
     Id: 2,

@@ -25,10 +25,12 @@
   color: white;
   gap: 8px;
   align-items: center;
+  overflow: visible;
 }
 #Nexcentlogo {
-  width: 43px;
   color: white;
+  position: relative;
+  z-index: 10;
 }
 .Nexcent_social_media {
   gap: 16px;
@@ -37,11 +39,21 @@
   margin: 40px 0px;
   gap: 8px;
 }
+.copy_right p {
+  font-size: 14px;
+  color: #f5f7fa;
+  line-height: 20px;
+  font-weight: 400;
+  clear: both;
+  display: inline-block;
+  overflow: visible;
+  white-space: nowrap;
+}
 /* company style */
 .footer_Link_sections {
   display: flex;
   justify-content: space-between;
-  gap: 30px;
+  gap: 92px;
 }
 .footer_Link_sections .company {
   gap: 24px;
@@ -54,23 +66,26 @@
   margin-bottom: 24px;
 }
 .Stay_upto_Date input {
-  background-color: #a79797;
+  background-color: rgba(252, 248, 248, 0.2);
   border-radius: 8px;
-  opacity: 20%;
   width: 255px;
   height: 40px;
+  color: #eaebf0 !important;
+  padding-left: 12px;
 }
 .Stay_upto_Date input[type="text"] {
-  color: white;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
-  z-index: 10;
+  z-index: 2;
+  color: #ffffff !important;
+  position: relative;
 }
+
 .Stay_upto_Date img {
   position: relative;
   left: 86%;
-  bottom: 12%;
+  bottom: 13%;
 }
 .company h2 {
   font-weight: 600;
@@ -84,10 +99,241 @@
   line-height: 28px;
   color: #ffffff;
 }
+ul li {
+  list-style-type: none;
+  color: #f5f7fa;
+  margin-top: 10px;
+}
 ul li a {
   font-size: 400;
   font-size: 14px;
   line-height: 20px;
   word-spacing: 0;
+  flex-wrap: nowrap;
   color: #f5f7fa;
+  clear: both;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.mobile_View_footer {
+  display: none;
+}
+@media (max-width: 1280px) {
+  .footer {
+    padding: 40px 80px;
+    gap: 24%;
+  }
+
+  /* company style */
+  .footer_Link_sections {
+    gap: 36px;
+  }
+
+  .Stay_upto_Date input {
+    width: 240px;
+  }
+}
+@media (max-width: 1024px) {
+  .footer {
+    padding: 30px 40px;
+    gap: 19%;
+  }
+
+  /* company style */
+  .footer_Link_sections {
+    gap: 24px;
+  }
+
+  .Stay_upto_Date input {
+    width: 230px;
+  }
+}
+@media (max-width: 960px) {
+  .footer {
+    padding: 30px 40px;
+    gap: 17%;
+  }
+
+  /* company style */
+  .footer_Link_sections {
+    gap: 22px;
+  }
+
+  .Stay_upto_Date input {
+    width: 220px;
+  }
+}
+@media (max-width: 854px) {
+  .footer {
+    padding: 30px 40px;
+    gap: 12%;
+  }
+
+  /* company style */
+  .footer_Link_sections {
+    gap: 19px;
+  }
+
+  .Stay_upto_Date input {
+    width: 220px;
+  }
+}
+@media (max-width: 768px) {
+  .footer {
+    padding: 32px 16px;
+    display: none;
+    gap: 16px;
+
+    align-items: center;
+    flex-direction: column;
+  }
+
+  /* Mobile view footer */
+  .mobile_View_footer {
+    background-color: #263238;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    padding: 32px 16px;
+    gap: 20px;
+    display: flex; /* Show the mobile footer */
+  }
+  .mobileView_companySupport {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 40px;
+  }
+  .MobileView_support h2,
+  .MobileView_company h2 {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+    color: #ffffff;
+    cursor: pointer;
+  }
+  ul li {
+    list-style-type: none;
+    color: #f5f7fa;
+    /* border-bottom: 1px solid gray; */
+    margin-top: 10px;
+  }
+  ul li a {
+    font-size: 14px;
+    line-height: 20px;
+    word-spacing: 0%;
+    flex-wrap: nowrap;
+    color: #f5f7fa;
+    clear: both;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  .MobileView_Nexcent_InputFiend {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 40px;
+    margin-top: 20px;
+  }
+  .MobileView_Nexcent {
+  }
+  .MobileView_Nexcent_logo {
+    color: white;
+    gap: 8px;
+    align-items: center;
+  }
+  .MobileView_Nexcent_logo #MobileView_Nexcent_logo {
+    width: 43px;
+    color: white;
+  }
+  .MobileView_copy_right {
+    margin: 20px 0px;
+    gap: 8px;
+  }
+
+  .MobileView_copy_right p {
+    font-size: 14px;
+    color: #f5f7fa;
+    line-height: 20px;
+    font-weight: 400;
+    clear: both;
+    display: inline-block;
+    overflow: visible;
+    white-space: nowrap;
+  }
+  .MobileView_Nexcent_social_media {
+    gap: 16px;
+  }
+  .MobileView_Stay_upto_Date {
+  }
+  .MobileView_Stay_upto_Date h2 {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+    color: #ffffff;
+    margin-top: 8px;
+    margin-bottom: 3rem;
+  }
+  .MobileView_Stay_upto_Date input {
+    background-color: rgba(252, 248, 248, 0.2);
+    border-radius: 8px;
+    width: 210px;
+    height: 40px;
+    color: #eaebf0 !important;
+    padding-left: 8px;
+  }
+  .MobileView_Stay_upto_Date input[type="text"] {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    z-index: 2;
+    color: #ffffff !important;
+    position: relative;
+  }
+
+  .MobileView_Stay_upto_Date img {
+    position: relative;
+    left: 86%;
+    bottom: 17%;
+  }
+}
+@media (max-width: 480px) {
+  .MobileView_Nexcent_InputFiend {
+    display: grid;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-top: 20px;
+  }
+  .MobileView_Stay_upto_Date img {
+    position: relative;
+    left: 86%;
+    bottom: 30%;
+  }
+  .MobileView_Stay_upto_Date {
+    height: 100px;
+  }
+  .MobileView_Stay_upto_Date h2 {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+    color: #ffffff;
+    margin-top: 8px;
+    margin-bottom: 2rem;
+  }
+  .MobileView_Stay_upto_Date input {
+    background-color: rgba(252, 248, 248, 0.2);
+    border-radius: 8px;
+    width: 240px;
+    height: 40px;
+    color: #eaebf0 !important;
+    padding-left: 8px;
+  }
+  .mobileView_companySupport {
+    display: flex;
+    justify-content: space-between;
+    gap: auto;
+  }
 }
