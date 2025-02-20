@@ -1,4 +1,3 @@
-import React from "react";
 import "./AssociationBanner.css";
 import racingBoatImg from "../../images/association-banner.png";
 import BIcon1 from "../../images/BIcon1.png";
@@ -38,7 +37,7 @@ const AssociationBanner = () => {
           <p className="profile_title">
             British Dragon Boat Racing Association
           </p>
-          <div className="associationBanner_social  flex flex-col sm:flex-row items-center sm:justify-between w-full">
+          <div className="associationBanner_social flex flex-col sm:flex-row items-center sm:justify-between w-full">
             <Swiper
               className="w-full sm:w-auto"
               modules={[Navigation, Pagination, Autoplay]}
@@ -48,7 +47,7 @@ const AssociationBanner = () => {
               navigation={false}
               autoplay={{
                 delay: 0, // No delay, continuous movement
-                disableOnInteraction: false, // Keep autoplay active on user interaction
+                disableOnInteraction: false,
               }}
               speed={2000}
               breakpoints={{
@@ -92,8 +91,8 @@ const AssociationBanner = () => {
                 )
               )}
             </Swiper>
-            <div className="w-[50] sm:w-full text-center sm:mt-4">
-              <button className="meet_all_customer sm:text-left">
+            <div className="w-[50] sm:w-full  sm:mt-4">
+              <button className="meet_all_customer text-left">
                 Meet all customers ➡
               </button>
             </div>

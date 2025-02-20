@@ -28,6 +28,13 @@
 .marketing_Blog {
 }
 .card {
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+
+  position: relative;
+  overflow: hidden;
+}
+.card:hover {
+  transform: translateY(-5px);
 }
 .card .marketing_blog_img {
   width: 368px;
@@ -38,12 +45,62 @@
   background-color: #f5f7fa;
   border-radius: 8px;
   padding: 16px;
-  /* gap: 16px; */
+
   margin: auto;
   position: relative;
   bottom: 25%;
   box-shadow: #abbed166 0px 8px 20px;
+  overflow: hidden;
 }
+/* p/card hover effevt */
+
+.card_content::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #5ce673, #e9afe7) !important;
+  opacity: 0;
+  transform: scale(0);
+  transition: all 0.4s ease-in-out;
+  z-index: 1;
+}
+
+.card_content:hover::before {
+  opacity: 1;
+  transform: scale(1);
+  color: #f5f7fa !important;
+}
+
+/* Different animation directions for each card */
+.marketing_Blog .card:nth-child(1) .card_content::before {
+  transform-origin: top left;
+}
+
+.marketing_Blog .card:nth-child(2) .card_content::before {
+  transform-origin: top right;
+}
+
+.marketing_Blog .card:nth-child(3) .card_content::before {
+  transform-origin: bottom center;
+  /* color: #f5f7fa !important; */
+}
+
+/* Ensure text stays above gradient */
+.card_content:hover {
+  color: #f5f7fa !important;
+}
+.card_content:hover h2 {
+  color: white !important;
+}
+
+.card_content:hover button {
+  color: #fff !important;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+/* card content hover end here */
 .card_content h2 {
   font-weight: 600px;
   font-size: 20px;
@@ -52,6 +109,8 @@
   color: #717171;
   padding-bottom: 16px;
   word-spacing: 0%;
+  position: relative;
+  z-index: 2;
 }
 .card_content button {
   font-weight: 600;
@@ -60,6 +119,8 @@
   color: #4caf4f;
   letter-spacing: 0%;
   cursor: pointer;
+  position: relative;
+  z-index: 2;
 }
 @media (max-width: 1280px) {
   .new_marketing_blog {
@@ -75,8 +136,7 @@
   }
   .card_content {
     width: 310px;
-    text-align: center;
-    background-color: #f5f7fa;
+
     border-radius: 8px;
     padding: 14px;
 
@@ -86,7 +146,6 @@
 }
 @media (max-width: 1024px) {
   .new_marketing_blog {
-    background-color: white;
     padding: 0 40px;
   }
   .new_marketing_title {

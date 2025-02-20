@@ -1,4 +1,4 @@
-import React from "react";
+
 import "./designProcess.css";
 import designProcesImg from "../../images/desingFooterImage.png";
 const DesignProcess = () => {

@@ -72,26 +72,15 @@
     padding-left: 40px;
   }
   .association_banner_content p {
-    font-weight: 500;
     font-size: 16px;
-    line-height: 24px;
-    letter-spacing: 0;
-    color: #717171;
   }
   .association_banner_content h2 {
-    color: #4caf4f;
-    font-weight: 600;
-    line-height: 28px;
     font-size: 20px;
     margin: 16px 0px 8px;
-    letter-spacing: 0;
   }
   .association_banner_content .profile_title {
-    color: #89939e;
-    font-weight: 400;
     font-size: 16px;
-    line-height: 24px;
-    letter-spacing: 0;
+
     margin-bottom: 32px;
   }
   .associationBanner_social {
@@ -102,11 +91,6 @@
     width: 44px;
   }
   .meet_all_customer {
-    color: #4caf4f;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 28px;
-    letter-spacing: 0%;
     clear: both;
     display: inline-block;
     overflow: hidden;
@@ -130,26 +114,13 @@
     padding-left: 20px;
   }
   .association_banner_content p {
-    font-weight: 500;
     font-size: 15px;
-    line-height: 24px;
-    letter-spacing: 0;
-    color: #717171;
   }
   .association_banner_content h2 {
-    color: #4caf4f;
-    font-weight: 600;
-    line-height: 26px;
     font-size: 20px;
     margin: 16px 0px 8px;
-    letter-spacing: 0;
   }
   .association_banner_content .profile_title {
-    color: #89939e;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 24px;
-    letter-spacing: 0;
     margin-bottom: 32px;
   }
   .associationBanner_social {
@@ -160,11 +131,8 @@
     width: 44px;
   }
   .meet_all_customer {
-    color: #4caf4f;
-    font-weight: 600;
     font-size: 18px;
-    line-height: 28px;
-    letter-spacing: 0%;
+
     clear: both;
     display: inline-block;
     overflow: hidden;
@@ -190,19 +158,12 @@
     padding-left: 0px;
   }
   .association_banner_content p {
-    font-weight: 500;
     font-size: 14px;
-    line-height: 24px;
-    letter-spacing: 0;
-    color: #717171;
   }
   .association_banner_content h2 {
-    color: #4caf4f;
-    font-weight: 600;
     line-height: 26px;
     font-size: 20px;
     margin: 16px 0px 8px;
-    letter-spacing: 0;
   }
   .association_banner_content .profile_title {
     color: #89939e;
@@ -223,13 +184,10 @@
     width: 44px;
   }
   .meet_all_customer {
-    color: #4caf4f;
-    font-weight: 600;
     font-size: 16px;
-    line-height: 28px;
-    letter-spacing: 0%;
+
     position: relative;
-    right: 2%;
+    /* left: 100%; */
     clear: both;
     display: inline-block;
     overflow: hidden;

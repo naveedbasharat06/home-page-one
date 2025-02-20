@@ -10,10 +10,8 @@
 }
 .business_text {
   gap: 8px;
-  /* width: 540px; */
 }
-/* .business_heaing {
-} */
+
 #black_text {
   font-weight: 600;
   font-size: 36px;
@@ -35,7 +33,7 @@
   letter-spacing: 0%;
   color: #18191f;
 }
-/* Business Achievment cards style */
+
 .business_achievements {
   align-items: center;
   gap: 40px;
@@ -44,7 +42,6 @@
   align-items: center;
   position: relative;
   right: 10%;
-  /* width: 490px; */
 }
 .member_clubs {
   gap: 30px;
@@ -98,8 +95,6 @@
     padding: 40px 80px;
   }
 
-  /* .business_heaing {
-  } */
   #black_text {
     font-size: 35px;
   }
@@ -127,21 +122,15 @@
 }
 @media (max-width: 1024px) {
   .business_transformation {
-    background-color: #f5f7fa;
     max-width: 1024px;
   }
   .business_detail {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding: 30px 50px;
   }
   .business_text {
     gap: 8px;
-    /* width: 540px; */
   }
-  /* .business_heaing {
-  } */
+
   #black_text {
     font-size: 34px;
   }
@@ -151,7 +140,6 @@
   #business_description {
     font-size: 15px;
   }
-  /* Business Achievment cards style */
   .business_achievements {
     gap: 15px;
     right: 2%;
@@ -195,7 +183,6 @@
 }
 @media (max-width: 960px) {
   .business_transformation {
-    background-color: #f5f7fa;
     max-width: 960px;
   }
   .business_detail {
@@ -203,10 +190,8 @@
   }
   .business_text {
     gap: 4px;
-    /* width: 540px; */
   }
-  /* .business_heaing {
-  } */
+
   #black_text {
     font-size: 30px;
   }
@@ -216,7 +201,7 @@
   #business_description {
     font-size: 13px;
   }
-  /* Business Achievment cards style */
+  /* Business Achievment Records cards style */
   .business_achievements {
     gap: 10px;
     left: 0%;
@@ -261,7 +246,6 @@
 }
 @media (max-width: 768px) {
   .business_transformation {
-    background-color: #f5f7fa;
     max-width: 768px;
   }
   .business_detail {
@@ -273,11 +257,8 @@
   }
   .business_text {
     gap: 2px;
-    /* line-height: 20px; */
-    /* width: 540px; */
   }
-  /* .business_heaing {
-  } */
+
   #black_text {
     font-size: 28px;
     line-height: 24px;
@@ -359,11 +340,8 @@
   }
   .business_text {
     gap: 2px;
-    /* line-height: 20px; */
-    /* width: 540px; */
   }
-  /* .business_heaing {
-  } */
+
   #black_text {
     font-size: 25px;
     line-height: 24px;
@@ -374,7 +352,7 @@
   #business_description {
     font-size: 10px;
   }
-  /* Business Achievment cards style */
+
   .business_achievements {
     left: 0%;
     gap: 20px;

@@ -16,9 +16,9 @@ const Navigation = () => {
 
   return (
     <nav className="navbar_main">
-      {/* Desktop Navigation */}
+      {/* Desktop Navigation start */}
       <div className="desktop_viewNav">
-        {/* Brand Section */}
+        {/* Brand Section logo here */}
         <div className="brand-section">
           <img src={CompanyIcon} id="website_Logo" alt="Website logo" />
           <span className="brand-name">Nexcent</span>

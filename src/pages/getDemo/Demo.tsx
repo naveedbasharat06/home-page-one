@@ -6,7 +6,7 @@ const GetDemo = () => {
     <div className="Get_Demo">
       <div className="demo_heading text-center ">
         <h1>Pellentesque suscipit fringilla libero eu.</h1>
-        <button className="demo_btn">Get a Demo ➞</button>
+        <button className="demo_btn hover:bg-green-300!">Get a Demo ➞</button>
       </div>
     </div>
   );

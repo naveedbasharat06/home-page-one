@@ -2,8 +2,8 @@ import React from "react";
 import img18 from "../../images/image 18.png";
 import img19 from "../../images/image 19.png";
 import img20 from "../../images/image 20.png";
-
 import "./MarketingBlog.css";
+
 const MarketingBlog = () => {
   return (
     <div className="new_marketing_blog">

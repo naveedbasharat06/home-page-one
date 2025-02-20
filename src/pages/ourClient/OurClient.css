@@ -31,9 +31,8 @@
 }
 .client_icon {
   width: auto;
-  /* max-width: 60px; */
 }
-/* Community Card style */
+
 .community_div {
   margin-top: 40px;
   margin-bottom: 40px;
@@ -47,7 +46,6 @@
   letter-spacing: 0%;
   text-align: center;
   color: #4d4d4d;
-  /* width: 542px; */
 }
 .community_header p {
   font-size: 16px;
@@ -65,12 +63,10 @@
   margin: 16px 144px;
 }
 .community_card .card {
-  /* display: flex; */
-
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 
   width: 299px;
-  /* height: 280px; */
+
   padding: 24px 16px;
   border-radius: 8px;
   display: flex;
@@ -91,7 +87,7 @@
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 16px;
-  /* max-width: 100%; */
+
   height: auto;
 }
 .card p {
@@ -105,7 +101,7 @@
 /* pixel Grade year style */
 .pixelgrade_year {
   display: flex;
-  /* flex-direction: row; */
+
   margin: 0px 144px;
   padding-bottom: 50px;
   align-items: center;
@@ -157,15 +153,11 @@
     margin-right: 80px;
     padding-top: 15px;
   }
-  /* .client_Icons {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  } */
+
   .client_icon {
     width: auto;
   }
-  /* Community Card style */
+
   .community_div {
     margin-top: 35px;
     margin-bottom: 35px;
@@ -182,7 +174,7 @@
     font-size: 14px;
     padding: 8px 0;
   }
-  /* pixel Grade year style */
+  /* Pixel Grade year style here */
   .pixelgrade_year {
     margin: 0px 80px;
   }
@@ -212,17 +204,9 @@
     margin-left: 40px;
     margin-right: 40px;
   }
-  /* .client_Icons {
-   
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 14px;
-    padding: 15px 0px;
-  } */
+
   .client_icon {
     width: 36px;
-    /* max-width: 60px; */
     height: auto;
     transition: transform 0.3s ease;
   }
@@ -235,11 +219,7 @@
   .client_heading p {
     font-size: 16px;
   }
-  /* .client_Icons {
-    margin-top: 14px;
-    padding: 25px 0px;
-  } */
-  /* Community Card style */
+
   .community_div {
     margin-top: 30px;
     margin-bottom: 30px;
@@ -254,7 +234,6 @@
     letter-spacing: 0%;
     text-align: center;
     color: #4d4d4d;
-    /* width: 542px; */
   }
   .community_header p {
     font-size: 15px;
@@ -276,7 +255,7 @@
 
     padding: 8px 0;
   }
-  /* pixel Grade year style */
+  /* pixel Grade year style here*/
   .pixelgrade_year {
     display: flex;
     margin: 0px 40px;
@@ -321,18 +300,11 @@
   .client_heading p {
     font-size: 14px;
   }
-  /* .client_Icons {
-    display: flex;
 
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 20px;
- 
-  } */
   .client_icon {
     width: 40%;
   }
-  /* Community Card style */
+
   .community_div {
     margin-top: 20px;
     margin-bottom: 20px;
@@ -380,7 +352,7 @@
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 16px;
-    /* max-width: 100%; */
+
     height: auto;
   }
   .card p {
@@ -445,17 +417,11 @@
   .client_heading p {
     font-size: 14px;
   }
-  /* .client_Icons {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 10px;
-    gap: 10px;
-  } */
+
   .client_icon {
     width: 60%;
   }
-  /* Community Card style */
+  /* Community Card style here */
   .community_div {
     margin-top: 16px;
     margin-bottom: 16px;
@@ -555,7 +521,6 @@
     gap: 10px;
   }
   .client_icon {
-    /* max-width: 40px; */
   }
   /* Community Card style */
   .community_div {

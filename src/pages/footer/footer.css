@@ -86,6 +86,7 @@
   position: relative;
   left: 86%;
   bottom: 13%;
+  cursor: pointer;
 }
 .company h2 {
   font-weight: 600;
@@ -181,12 +182,7 @@ ul li a {
 }
 @media (max-width: 768px) {
   .footer {
-    padding: 32px 16px;
     display: none;
-    gap: 16px;
-
-    align-items: center;
-    flex-direction: column;
   }
 
   /* Mobile view footer */
@@ -202,7 +198,9 @@ ul li a {
   .mobileView_companySupport {
     display: flex;
     justify-content: space-evenly;
-    gap: 40px;
+    gap: 110px;
+    position: relative;
+    right: 6%;
   }
   .MobileView_support h2,
   .MobileView_company h2 {
@@ -215,7 +213,7 @@ ul li a {
   ul li {
     list-style-type: none;
     color: #f5f7fa;
-    /* border-bottom: 1px solid gray; */
+    border-bottom: 1px solid gray;
     margin-top: 10px;
   }
   ul li a {
@@ -296,6 +294,7 @@ ul li a {
     position: relative;
     left: 86%;
     bottom: 17%;
+    cursor: pointer;
   }
 }
 @media (max-width: 480px) {
@@ -334,6 +333,9 @@ ul li a {
   .mobileView_companySupport {
     display: flex;
     justify-content: space-between;
-    gap: auto;
+
+    gap: 40px;
+    position: relative;
+    right: 2%;
   }
 }

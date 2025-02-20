@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination, Navigation, Autoplay } from "swiper/modules"; // Correct way to import modules
-
+import { Pagination, Navigation, Autoplay } from "swiper/modules";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
@@ -49,7 +48,7 @@ const HeroSection = () => {
                 transition={{ duration: 1, ease: "easeInOut" }}
                 className="hero_flex_section"
               >
-                {/* Left Content */}
+                {/* Left Hero section Content here */}
                 <div className="heroSection_left">
                   <div className="heroHeading">
                     <h2>Lessons and insights </h2>
@@ -62,7 +61,7 @@ const HeroSection = () => {
                   <button className="heroCta">Register</button>
                 </div>
 
-                {/* Right Image */}
+                {/* Hero Section Image here Image */}
                 <div className="heroSection_right">
                   <motion.img
                     src={HeroSectionImg}
@@ -80,18 +79,6 @@ const HeroSection = () => {
             </SwiperSlide>
           ))}
         </Swiper>
-
-        {/* Slider Dots */}
-        {/* <div className="sliderDots">
-          {[...Array(totalSlides)].map((_, index) => (
-            <button
-              key={index}
-              onClick={() => setActiveSlide(index)}
-              className={`sliderDot ${activeSlide === index ? "active" : ""}`}
-              aria-label={`Slide ${index + 1}`}
-            />
-          ))}
-        </div> */}
       </div>
     </section>
   );

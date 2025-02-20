@@ -1,4 +1,5 @@
-import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination, Autoplay } from "swiper/modules";
 
 import Icon1 from "../../images/logo01.png";
 import Icon2 from "../../images/Logo2.png";
@@ -12,9 +13,6 @@ import NationalIcon from "../../images/NationalIcon.png";
 import ClubIcon from "../../images/ClubIcon.png";
 import frame35 from "../../images/Frame 35.png";
 import "./OurClient.css";
-// Update the imports at the top
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -54,10 +52,10 @@ const OurClient = () => {
     <div className="main_div">
       <div className="client_div">
         <div className="client_heading text-center">
-          <h2>Our Client</h2>
+          <h2>Our Clients</h2>
           <p>We have been working with some Fortune 500+ clients</p>
         </div>
-        {/* <div className=""> */}
+        
         <Swiper
           className="mx-auto flex justify-between"
           modules={[Navigation, Pagination, Autoplay]}
@@ -72,7 +70,7 @@ const OurClient = () => {
           speed={2000}
           // pagination={{ clickable: false }}
           breakpoints={{
-            // when window width is >= 320px
+      
             290: {
               slidesPerView: 3,
               spaceBetween: 5,
@@ -81,12 +79,12 @@ const OurClient = () => {
               slidesPerView: 3,
               spaceBetween: 10,
             },
-            // when window width is >= 480px
+          
             480: {
               slidesPerView: 3,
               spaceBetween: 10,
             },
-            // when window width is >= 640px
+         
 
             768: {
               slidesPerView: 4,
@@ -117,10 +115,10 @@ const OurClient = () => {
             )
           )}
         </Swiper>
-        {/* </div> */}
+       
       </div>
 
-      {/* community Card */}
+      {/* Community Card Here */}
       <div className="community_div">
         <div className="community_header text-center">
           <h2>
@@ -139,7 +137,7 @@ const OurClient = () => {
           ))}
         </div>
       </div>
-      {/* PixelGrade_year  */}
+      {/* Pixel Grade Page here */}
       <div className="pixelgrade_year flex sm:flex-row">
         {/* Image for Large & Medium screens */}
         <div className="pixelGrade_img_div large-screen">

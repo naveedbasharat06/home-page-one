@@ -1,7 +1,7 @@
 /* Hero Section Styles */
 /* Change the color of inactive dots */
 .swiper-pagination-bullet {
-  background-color: #b4e2b6 !important; /* Your desired active dot color */
+  background-color: #b4e2b6 !important;
 
   width: 10px;
   height: 10px;
@@ -10,7 +10,7 @@
 
 /* Change the color of the active dot */
 .swiper-pagination-bullet-active {
-  background-color: #4caf4f !important; /* Your desired active dot color */
+  background-color: #4caf4f !important;
   width: 10px;
   height: 10px;
 }
@@ -43,9 +43,6 @@
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
-  /* display: inline-block; */
-  /* white-space: nowrap; */
-  /* margin-bottom: -15px; */
 }
 .herosubheading {
   font-size: 64px;
@@ -87,13 +84,12 @@
 }
 /* Add to existing CSS */
 
+/* Hero Section Resposive Styles */
 @media (max-width: 1366px) {
-  /* Hero Section Styles */
   .heroSection {
     max-width: 1366px;
   }
   .hero_flex_section {
-    /* gap: 104px; */
     margin: 64px 70px;
   }
   .heroSection_left {
@@ -105,10 +101,6 @@
   }
   .heroHeading h2 {
     font-size: 48px;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
-    /* word-spacing: 20px; */
   }
   .herosubheading {
     font-size: 54px;
@@ -121,26 +113,23 @@
     width: 371px;
   }
 }
+
 @media (max-width: 1024px) {
-  /* Hero Section Styles */
   .heroSection {
     max-width: 1024px;
   }
   .hero_flex_section {
-    /* gap: 104px; */
+    
     margin: 40px 50px;
   }
 
   .heroHeading h2 {
     font-size: 48px;
-    font-weight: 600;
-    line-height: 50px;
+  
   }
   .herosubheading {
     font-size: 48px;
-    font-weight: 600;
-    line-height: 50px;
-    font-weight: 600;
+  
   }
   .heroSubtext {
     font-size: 15px;
@@ -172,10 +161,7 @@
   .heroHeading h2 {
     font-size: 41px;
 
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    /* word-spacing: 20px; */
+    
   }
   .herosubheading {
     font-size: 40px;
@@ -269,17 +255,16 @@
     bottom: 3%;
   }
 }
+/* Hero Section Styles */
 @media (max-width: 425px) {
-  /* Hero Section Styles */
   .heroSection {
     max-width: 425px;
   }
   .hero_flex_section {
     flex-direction: column;
-    /* justify-content: space-between; */
+    
     align-items: center;
   }
-
   .heroHeading h2 {
     font-size: 30px;
     margin-bottom: 0;
@@ -290,11 +275,9 @@
   .heroSubtext {
     font-size: 12px;
   }
-
   .heroCta {
     padding: 13px 30px;
   }
-
   #heroSection_Image {
     width: 265px;
     position: relative;

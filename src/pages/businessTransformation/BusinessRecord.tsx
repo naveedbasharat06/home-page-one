@@ -41,7 +41,7 @@ const BusinessRecord_Data: BusinessRecordT[] = [
 const BusinessRecord = () => {
   const { ref, inView } = useInView({
     triggerOnce: true,
-    threshold: 0.5, // Trigger when 50% of component is visible
+    threshold: 0.5,
   });
   return (
     <div className="business_transformation" ref={ref}>
@@ -59,9 +59,8 @@ const BusinessRecord = () => {
         <div className="business_achievements">
           <div className="member_clubs flex sm:flex-row">
             <div className="members_Card flex align-middle">
-              {/* <span> */}
               <img className="cardIcon" src={memberIcons} alt="memeberIcon" />
-              {/* </span> */}
+
               <div>
                 <h2 className="countDownRecords">
                   {inView && (
@@ -69,7 +68,7 @@ const BusinessRecord = () => {
                       end={BusinessRecord_Data[0].countDownRecords}
                       duration={2}
                       separator=","
-                      // className="countDownRecords"
+                     
                     />
                   )}
                 </h2>
